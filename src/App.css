@@ -1,0 +1,14 @@
+body {
+  margin: 0px;
+  padding: 0px;
+  background-image: url('./static/images/circles_bg.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: bottom;
+}
+
+.bg-overlay {
+  height: 1000px;
+  width: 100%;
+  background: rgba(40, 114, 146, 0.35)
+}

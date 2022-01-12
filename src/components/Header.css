@@ -1,0 +1,23 @@
+.header {
+  background-color: darkslategrey;
+  height: 50px;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+li {
+  list-style: none;
+}
+
+.logo-left {
+  width: 100px;
+  display: flex;
+  justify-content: center;
+}
+
+.nav-menu {
+  display: flex;
+  flex-direction: row;
+}
