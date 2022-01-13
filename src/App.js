@@ -1,6 +1,6 @@
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { Routes, Route } from 'react-router-dom';
 import './App.css'
-import Header from './components/Header';
+import Navigation from './components/Navigation';
 import Home from './components/pages/Home';
 import Mission from './components/pages/Mission';
 import About from './components/pages/About'
@@ -11,17 +11,15 @@ function App() {
   return (
     <div className="App">
       <div className='bg-overlay'>
-        <BrowserRouter>
-            <Routes>
-              <Route path="/" element={<Header />}>
-                <Route index element={<Home />} />
-                <Route path="mission" element={<Mission />} />
-                <Route path="contact" element={<About />} />
-                <Route path="offerings" element={<Offerings />} />
-                <Route path="samples" element={<Samples />} />
-              </Route>
-            </Routes>
-          </BrowserRouter>
+      <Navigation />
+        <Routes>
+          <Route path="/" element={<Navigation />} />
+          <Route index element={<Home />} />
+          <Route path="/mission" element={<Mission />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/offerings" element={<Offerings />} />
+          <Route path="/samples" element={<Samples />} />
+        </Routes>
       </div>
     </div>
   );
