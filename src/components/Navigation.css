@@ -1,9 +1,14 @@
 .navigation {
-  height: 50px;
+  height: 150px;
   padding: 10px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+.nav-button {
+  font-family: 'quicksand-bold';
+  user-select: none;
 }
 
 li {
@@ -13,9 +18,12 @@ li {
 }
 
 .logo-left {
-  width: 100px;
   display: flex;
   justify-content: center;
+}
+
+.logo-image {
+  display: inline;
 }
 
 nav {
@@ -28,10 +36,15 @@ a {
   color: black;
 }
 
-/* a:link {
-
-} */
-
 a:visited {
   color: black;
+}
+
+.contact-us {
+  display: flex;
+  width: 281px;
+}
+
+img {
+  pointer-events: none;
 }
