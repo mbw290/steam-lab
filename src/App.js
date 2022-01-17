@@ -1,26 +1,40 @@
-import { Routes, Route } from 'react-router-dom';
+import { Link, Outlet } from 'react-router-dom'
+import Logo from './static/images/logo.png'
 import './App.css'
-import Navigation from './components/Navigation';
-import Home from './components/pages/Home';
-import Mission from './components/pages/Mission';
-import About from './components/pages/About'
-import Offerings from './components/pages/Offerings';
-import Samples from './components/pages/Samples';
 
 function App() {
   return (
     <div className="App">
-      <div className='bg-overlay'>
-      <Navigation />
-        <Routes>
-          <Route path="/" element={<Navigation />} />
-          <Route index element={<Home />} />
-          <Route path="/mission" element={<Mission />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/offerings" element={<Offerings />} />
-          <Route path="/samples" element={<Samples />} />
-        </Routes>
+      <div className='navigation'>
+        <div className='logo-left'>
+          <Link to='/'>
+            <img src={Logo} alt='Logo' />
+          </Link>
+        </div>
+        <nav>
+          <ul>
+            <li className='nav-button'>
+              <Link to='/'>HOME</Link>
+            </li>
+            <li className='nav-button'>
+              <Link to='/mission'>OUR MISSION</Link>
+            </li>
+            <li className='nav-button'>
+              <Link to='/about'>ABOUT US</Link>
+            </li>
+            <li className='nav-button'>
+              <Link to='/offerings'>OFFERINGS</Link>
+            </li>
+            <li className='nav-button'>
+              <Link to='/samples'>SAMPLE LESSONS</Link>
+            </li>
+          </ul>
+        </nav>
+        <div className='contact-us'>
+          CONTACT US
+        </div>
       </div>
+      <Outlet />
     </div>
   );
 }

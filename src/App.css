@@ -23,17 +23,67 @@
   src: url(./fonts/Quicksand-SemiBold.ttf);
 }
 
+html,
 body {
   margin: 0px;
   padding: 0px;
   font-family: 'quicksand-regular';
-  background-position: center;
+  background-position: 50% 50%;
   background-image: 
     linear-gradient(
       rgba(40, 114, 146, 0.35), 
       rgba(40, 114, 146, 0.35)
     ),
     url('./static/images/circles_bg.png');
+  height: 100%;
+  width: 100%;
+}
+
+.navigation {
+  height: 150px;
+  padding: 10px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.nav-button {
+  font-family: 'quicksand-bold';
+  user-select: none;
+}
+
+li {
+  list-style: none;
+  display: inline;
+  padding: 14px;
+}
+
+.logo-left {
+  display: flex;
+  justify-content: center;
+}
+
+.logo-image {
+  display: inline;
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+a:visited {
+  color: black;
+}
+
+.contact-us {
+  display: flex;
+  width: 281px;
 }
 
 img {

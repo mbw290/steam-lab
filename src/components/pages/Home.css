@@ -1,5 +1,100 @@
+.home-container {
+  display: flex;
+  justify-content: space-around;
+  flex-flow: row wrap;
+}
+
+.motto {
+  margin: 0px;
+  padding-bottom: 20px;
+  font-size: 5em;
+  font-family: 'quicksand-bold';
+}
+
+.home-text {
+  padding-top: 40px;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: flex-start;
+  padding-bottom: 40px;
+}
+
+.description {
+  font-size: 1.25em;
+  inline-size: 524px;
+  overflow-wrap: break-word;
+  padding-bottom: 40px;
+}
+
 .kids-home {
-  float: right;
-  padding-top: 75px;
-  padding-right: 75px;
+  display: flex;
+  justify-content: center;
+}
+
+.blue-text {
+  color: rgb(0, 96, 128);
+}
+
+
+/* Sample Lessons  */
+
+.btn-sample-lessons {
+  appearance: none;
+  backface-visibility: hidden;
+  background-color: #206acc;
+  border-radius: 25px;
+  border-style: none;
+  box-shadow: none;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: 'quicksand-regular';
+  font-size: 16px;
+  font-weight: 500;
+  height: 50px;
+  letter-spacing: normal;
+  line-height: 1.5;
+  outline: none;
+  overflow: hidden;
+  padding: 14px 30px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  transform: translate3d(0, 0, 0);
+  transition: all .3s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: top;
+  white-space: nowrap;
+}
+
+.btn-sample-lessons:hover {
+  background-color: #3a82e0;
+  box-shadow: rgba(0, 0, 0, .05) 0 5px 30px, rgba(0, 0, 0, .05) 0 1px 4px;
+  opacity: 1;
+  transform: translateY(0);
+  transition-duration: .35s;
+}
+
+.btn-sample-lessons:hover:after {
+  opacity: .5;
+}
+
+.btn-sample-lessons:active {
+  box-shadow: rgba(0, 0, 0, .1) 0 3px 6px 0, rgba(0, 0, 0, .1) 0 0 10px 0, rgba(0, 0, 0, .1) 0 1px 4px -1px;
+  transform: translateY(2px);
+  transition-duration: .35s;
+}
+
+.btn-sample-lessons:active:after {
+  opacity: 1;
+}
+
+@media (min-width: 768px) {
+  .btn-sample-lessons {
+    padding: 14px 22px;
+    width: 176px;
+  }
 }
