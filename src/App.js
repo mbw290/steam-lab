@@ -3,6 +3,7 @@ import Logo from './static/images/logo.png'
 import './App.css'
 
 function App() {
+
   return (
     <div className="App">
       <div className='navigation'>
@@ -31,7 +32,7 @@ function App() {
           </ul>
         </nav>
         <div className='contact-us'>
-          CONTACT US
+        <button className="button-contact-us">CONTACT US</button>
         </div>
       </div>
       <Outlet />

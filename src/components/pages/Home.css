@@ -4,6 +4,14 @@
   flex-flow: row wrap;
 }
 
+.intro-video__container {
+  display: flex;
+  justify-content: center;
+  /* height: 350px; */
+  overflow: hidden;
+  margin-bottom: 60px;
+}
+
 .motto {
   margin: 0px;
   padding-bottom: 20px;
@@ -12,10 +20,9 @@
 }
 
 .home-text {
-  padding-top: 40px;
   display: flex;
   flex-flow: column wrap;
-  justify-content: flex-start;
+  justify-content: center;
   padding-bottom: 40px;
 }
 
@@ -35,66 +42,48 @@
   color: rgb(0, 96, 128);
 }
 
+/* Sample Lessons Button */
 
-/* Sample Lessons  */
+.button-sample-lessons__container {
+  display: flex;
+  justify-content: flex-end;
+}
 
-.btn-sample-lessons {
-  appearance: none;
-  backface-visibility: hidden;
-  background-color: #206acc;
-  border-radius: 25px;
-  border-style: none;
-  box-shadow: none;
-  box-sizing: border-box;
-  color: #fff;
-  cursor: pointer;
-  display: inline-block;
-  font-family: 'quicksand-regular';
-  font-size: 16px;
-  font-weight: 500;
-  height: 50px;
-  letter-spacing: normal;
-  line-height: 1.5;
-  outline: none;
-  overflow: hidden;
-  padding: 14px 30px;
+.button-sample-lessons {
   position: relative;
-  text-align: center;
-  text-decoration: none;
-  transform: translate3d(0, 0, 0);
-  transition: all .3s;
-  user-select: none;
-  -webkit-user-select: none;
-  touch-action: manipulation;
-  vertical-align: top;
-  white-space: nowrap;
+  background: rgb(255, 166, 0); 
+  border: none;
+  outline: none;
+  height: 5em;
+  width: 5em;
+  font-size: 1em; 
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, .3);
+  cursor: pointer;
+	-moz-border-radius: 5em;
+	-webkit-border-radius: 5em;
+	border-radius: 5em;
 }
 
-.btn-sample-lessons:hover {
-  background-color: #3a82e0;
-  box-shadow: rgba(0, 0, 0, .05) 0 5px 30px, rgba(0, 0, 0, .05) 0 1px 4px;
-  opacity: 1;
-  transform: translateY(0);
-  transition-duration: .35s;
+.button-sample-lessons:hover {
+  background: rgb(255, 196, 0);
 }
 
-.btn-sample-lessons:hover:after {
-  opacity: .5;
+.button-sample-lessons:before {
+  content: "";
+  position: absolute;
+  top: 1.5em;
+  left: 1.67em;
+  height: 0;
+  border-style: solid;
+  border-width: 1em 0 1em 2em;
+  border-color: transparent transparent transparent #ffffff; 
+  transition: .218s ease;
 }
 
-.btn-sample-lessons:active {
-  box-shadow: rgba(0, 0, 0, .1) 0 3px 6px 0, rgba(0, 0, 0, .1) 0 0 10px 0, rgba(0, 0, 0, .1) 0 1px 4px -1px;
-  transform: translateY(2px);
-  transition-duration: .35s;
-}
-
-.btn-sample-lessons:active:after {
-  opacity: 1;
-}
-
-@media (min-width: 768px) {
-  .btn-sample-lessons {
-    padding: 14px 22px;
-    width: 176px;
-  }
+.button-sample-lessons__text {
+  display: inline;
+  vertical-align: middle;
+  padding-left: 16px;
+  font-size: 1.5em;
+  text-decoration-line: underline;
 }
