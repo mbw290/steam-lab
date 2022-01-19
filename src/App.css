@@ -32,10 +32,10 @@ body {
   background-image: 
     linear-gradient(
       rgba(40, 114, 146, 0.35), 
-      rgba(40, 114, 146, 0.35)
+      rgba(40, 114, 146, 0.35) 100vh
     ),
     url('./static/images/circles_bg.png');
-  height: 100%;
+  height: 100vh;
   width: 100%;
 }
 
@@ -45,6 +45,12 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+@media (max-width: 1000px) {
+  .nav-list {
+    display: none;
+  }
 }
 
 .nav-button {
@@ -63,6 +69,12 @@ li {
   width: 281px;
   padding-left: 40px;
   justify-content: center;
+}
+
+@media (max-width: 600px) {
+  .logo-left {
+    display: none;
+  }
 }
 
 .logo-image {
@@ -96,6 +108,12 @@ img {
 
 video {
   margin-top: -60px;
+}
+
+@media (max-width: 600px) {
+  video {
+    display: none;
+  }
 }
 
 /* Contact Us Button */

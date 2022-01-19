@@ -2,6 +2,7 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import kidsHome from '../../static/images/kids-home.png'
 import './Home.css'
+import '../../App.css'
 
 const Home = () => {
   return (
@@ -15,14 +16,34 @@ const Home = () => {
         <div className='home-text'>
           <p className='motto'>Where Excitement<br />and Learning<br /><span className='blue-text'>Come Together</span></p>
           <div className='description'>ONLINE STEAM VIDEO CHALLENGES TO SUPPORT STUDENTS, TEACHERS AND EXPANDED LEARNING PROGRAMS</div>
-          <div className='button-sample-lessons__container'>
-            <Link to='/samples'>
-              <button className='button-sample-lessons'></button><span className='button-sample-lessons__text'>Sample Lessons</span>
-            </Link>
+          <div className='buttons__container'>
+            <div className='contact-button__container'>
+              <Link to='/contact'>
+                <button className="button-contact-us">CONTACT US</button>
+              </Link>
+            </div>
+            <div className='sample-button__container'>
+              <Link to='/samples'>
+                <button className='button-sample-lessons'></button><span className='button-sample-lessons__text'>Sample Lessons</span>
+              </Link>
+            </div>
           </div>
         </div>
         <div className='kids-home'>
           <img src={kidsHome} alt='Science Kids' />
+        </div>
+      </div>
+      <div className='offerings__container'>
+        <div className='offerings'>
+          <div className='offerings-left'>
+            Left
+          </div>
+          <div className='offerings-center'>
+            Center
+          </div>
+          <div className='offerings-right'>
+            Right
+          </div>
         </div>
       </div>
     </>

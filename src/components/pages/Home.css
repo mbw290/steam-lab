@@ -4,6 +4,12 @@
   flex-flow: row wrap;
 }
 
+@media (max-width: 600px) {
+  .home-container {
+    width: 380px;
+  }
+}
+
 .intro-video__container {
   display: flex;
   justify-content: center;
@@ -12,11 +18,23 @@
   margin-bottom: 60px;
 }
 
+@media (max-width: 600px) {
+  .intro-video__container {
+    display: none;
+  }
+}
+
 .motto {
   margin: 0px;
   padding-bottom: 20px;
   font-size: 5em;
   font-family: 'quicksand-bold';
+}
+
+@media (max-width: 600px) {
+  .motto {
+    font-size: 2.5em;
+  }
 }
 
 .home-text {
@@ -33,21 +51,64 @@
   padding-bottom: 40px;
 }
 
+@media (max-width: 600px) {
+  .description {
+    display: flex;
+    justify-content: center;
+    font-size: 1.25em;
+    inline-size: 380px;
+  }
+}
+
+@media (max-width: 600px) {
+  .home-text {
+    inline-size: 380px;
+  }
+}
+
 .kids-home {
   display: flex;
   justify-content: center;
+}
+
+@media (max-width: 1000px) {
+  .kids-home img {
+    max-width: 85%;
+    max-height: 85%;
+  }
+}
+
+@media (max-width: 600px) {
+  .kids-home {
+    display: none;
+  }
 }
 
 .blue-text {
   color: rgb(0, 96, 128);
 }
 
-/* Sample Lessons Button */
-
-.button-sample-lessons__container {
+.buttons__container {
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-evenly;
+  flex-flow: row wrap;
+  align-items: center;
 }
+
+@media (max-width: 600px) {
+  .buttons__container {
+    justify-content: center;
+    flex-flow: column wrap;
+  }
+}
+
+@media (max-width: 1000px) {
+  .contact-button__container {
+    display: none;
+  }
+}
+
+/* Sample Lessons Button */
 
 .button-sample-lessons {
   position: relative;
@@ -86,4 +147,46 @@
   padding-left: 16px;
   font-size: 1.5em;
   text-decoration-line: underline;
+}
+
+.offerings__container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 250px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.offerings {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  flex-flow: row wrap;
+  background-color: #3a82e0;
+  border-radius: 40px;
+}
+
+@media (max-width: 1000px) {
+  .offerings {
+    width: 380px;
+  }
+}
+
+.offerings-left,
+.offerings-center,
+.offerings-right {
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  width: 400px;
+  padding: 20px;
+}
+
+@media (max-width: 600px) {
+  .offerings-left,
+  .offerings-center,
+  .offerings-right {
+    width: 380px;
+  }
 }

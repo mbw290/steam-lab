@@ -12,7 +12,7 @@ function App() {
             <img src={Logo} alt='Logo' />
           </Link>
         </div>
-        <nav>
+        <nav className='nav-list'>
           <ul>
             <li className='nav-button'>
               <Link to='/'>HOME</Link>
@@ -32,7 +32,9 @@ function App() {
           </ul>
         </nav>
         <div className='contact-us'>
-        <button className="button-contact-us">CONTACT US</button>
+          <Link to='/contact'>
+            <button className="button-contact-us">CONTACT US</button>
+          </Link>
         </div>
       </div>
       <Outlet />
