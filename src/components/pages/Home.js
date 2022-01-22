@@ -1,14 +1,9 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import kidsHome from '../../static/images/kids-home.png'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faCut, faVideo, faFileAlt } from '@fortawesome/free-solid-svg-icons'
+import Offerings from '../Offerings'
 import './Home.css'
 import '../../App.css'
-
-const iconStyling = {
-  padding: '16px'
-}
 
 const Home = () => {
   return (
@@ -39,28 +34,7 @@ const Home = () => {
           <img src={kidsHome} alt='Science Kids' />
         </div>
       </div>
-      <div className='offerings__container'>
-        <div className='offerings'>
-          <div className='offerings-left'>
-            <div className='video-icon__container'>
-              <FontAwesomeIcon icon={faVideo} color='white' size='2x' style={iconStyling} />
-            </div>
-            <span>42 Challenge Videos (6 per grade-level, K-6)</span>
-          </div>
-          <div className='offerings-center'>
-            <div className='video-icon__container'>
-              <FontAwesomeIcon icon={faFileAlt} color='white' size='2x' style={iconStyling} />
-            </div>
-            <span>Additional teacher resource documents for extension and enrichment</span>
-          </div>
-          <div className='offerings-right'>
-            <div className='video-icon__container'>
-              <FontAwesomeIcon icon={faCut} color='white' size='2x' style={iconStyling} />
-            </div>
-            <span>Designed for easy implementation with easy-to-find materials</span>
-          </div>
-        </div>
-      </div>
+        <Offerings />
     </>
   )
 }

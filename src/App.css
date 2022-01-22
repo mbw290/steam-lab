@@ -35,7 +35,7 @@ body {
       rgba(40, 114, 146, 0.35)
     ),
     url('./static/images/circles_bg.png');
-  height: 100vh;
+  height: 100%;
   width: 100%;
 }
 
