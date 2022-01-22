@@ -32,7 +32,7 @@ body {
   background-image: 
     linear-gradient(
       rgba(40, 114, 146, 0.35), 
-      rgba(40, 114, 146, 0.35) 100vh
+      rgba(40, 114, 146, 0.35)
     ),
     url('./static/images/circles_bg.png');
   height: 100vh;
@@ -47,7 +47,7 @@ body {
   align-items: center;
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 1300px) {
   .nav-list {
     display: none;
   }
@@ -100,6 +100,13 @@ a:visited {
   justify-content: flex-end;
   padding-right: 40px;
   width: 281px;
+}
+
+@media (max-width: 600px) {
+  .contact-us {
+    padding: 0px;
+    width: 100%;
+  }
 }
 
 img {

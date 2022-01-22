@@ -39,7 +39,7 @@ function App() {
       </div>
       <Outlet />
     </div>
-  );
+  )
 }
 
 export default App;
