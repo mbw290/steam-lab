@@ -16,10 +16,10 @@
   width: 80%;
 }
 
-@media (max-width: 1350px) {
+@media (max-width: 1475px) {
   .offerings {
     flex-flow: column wrap;
-    width: 70%;
+    width: 80%;
   }
 }
   
@@ -35,6 +35,22 @@
   height: 150px;
 }
 
+@media (max-width: 1475px) {
+  .offerings-left,
+  .offerings-center,
+  .offerings-right {
+    padding-left: 40px;
+  }
+}
+
+@media (max-width: 600px) {
+  .offerings-left,
+  .offerings-center,
+  .offerings-right {
+    padding-left: 0px;
+  }
+}
+
 .offerings__text {
   display: flex;
   flex-direction: column;
@@ -47,7 +63,7 @@
   border-color: white;
 }
 
-@media (max-width: 1350px) {
+@media (max-width: 1475px) {
   .offerings-center {
     border-left-style: none;
     border-right-style: none;
@@ -66,6 +82,18 @@ span {
   color: white;
 }
 
+@media (max-width: 1475px) {
+  span {
+    max-width: 775px;
+  }
+}
+
+@media (max-width: 600px) {
+  .offerings__text {
+    max-width: 250px;
+  }
+}
+
 .offerings__large-text {
   display: flex;
   width: 100%;
@@ -74,38 +102,64 @@ span {
   font-weight: bolder;
 }
 
-@media (max-width: 1350px) {
+@media (max-width: 600px) {
   .offerings__large-text {
     font-size: 2em;
   }
 }
 
+.offerings__small-text {
+  width: 100%;
+}
+
 .video-icon {
   display: flex;
+  justify-content: center;
   align-self: flex-start;
   background-color: #ff5b14;
   border-radius: 6px 25px;
-  margin-right: 12px;
+  margin-right: 20px;
+  width: 68px;
   position: relative;
-  top: 32px;
+  top: 20px;
 }
 
 .file-icon {
   display: flex;
+  justify-content: center;
   align-self: flex-start;
   background-color: #ffc118;
   border-radius: 6px 25px;
-  margin-right: 12px;
+  margin-right: 20px;
+  width: 68px;
   position: relative;
-  top: 32px;
+  top: 20px;
 }
 
 .scissors-icon {
   display: flex;
+  justify-content: center;
   align-self: flex-start;
   background-color: #36ca1e;
   border-radius: 6px 25px;
-  margin-right: 12px;
+  margin-right: 20px;
+  width: 68px;
   position: relative;
-  top: 32px;
+  top: 20px;
+}
+
+@media (max-width: 1475px) {
+  .video-icon,
+  .file-icon,
+  .scissors-icon {
+    top: 25%;
+  }
+}
+
+@media (max-width: 280px) {
+  .video-icon,
+  .file-icon,
+  .scissors-icon {
+    display: none;
+  }
 }

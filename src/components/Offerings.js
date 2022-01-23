@@ -13,29 +13,29 @@ const Offerings = () => {
         <div className='offerings'>
           <div className='offerings-left'>
             <div className='video-icon'>
-              <FontAwesomeIcon icon={faVideo} color='white' size='3x' style={iconStyling} />
+              <FontAwesomeIcon icon={faVideo} color='white' size='2x' style={iconStyling} />
             </div>
             <div className='offerings__text'>
               <span className='offerings__large-text'>Videos</span>
-              <span>42 challenge videos (6 per grade-level, K-6)</span><br />
+              <span className='offerings__small-text'>42 challenge videos (6 per grade-level, K-6)</span><br />
             </div>
           </div>
           <div className='offerings-center'>
             <div className='file-icon'>
-              <FontAwesomeIcon icon={faFileAlt} color='white' size='3x' style={iconStyling} />
+              <FontAwesomeIcon icon={faFileAlt} color='white' size='2x' style={iconStyling} />
             </div>
             <div className='offerings__text'>
               <span className='offerings__large-text'>Resources</span>
-              <span>Additional teacher resource documents for extension and enrichment</span>
+              <span className='offerings__small-text'>Additional teacher resource documents for extension and enrichment</span>
             </div>
           </div>
           <div className='offerings-right'>
             <div className='scissors-icon'>
-              <FontAwesomeIcon icon={faCut} color='white' size='3x' style={iconStyling} />
+              <FontAwesomeIcon icon={faCut} color='white' size='2x' style={iconStyling} />
             </div>
             <div className='offerings__text'>
               <span className='offerings__large-text'>Materials</span>
-              <span>Designed for easy implementation with easy-to-find materials</span>
+              <span className='offerings__small-text'>Designed for easy implementation with easy-to-find materials</span>
             </div>
           </div>
         </div>

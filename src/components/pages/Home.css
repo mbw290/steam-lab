@@ -6,7 +6,8 @@
 
 @media (max-width: 600px) {
   .home-container {
-    width: 380px;
+    width: 80%;
+    justify-content: center;
   }
 }
 
