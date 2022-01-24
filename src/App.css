@@ -47,12 +47,6 @@ body {
   align-items: center;
 }
 
-@media (max-width: 1300px) {
-  .nav-list {
-    display: none;
-  }
-}
-
 .nav-button {
   font-family: 'quicksand-bold';
   user-select: none;
@@ -81,9 +75,15 @@ li {
   display: inline;
 }
 
-nav {
+.nav-list {
   display: flex;
   flex-direction: row;
+}
+
+@media (max-width: 1300px) {
+  .nav-list {
+    display: none;
+  }
 }
 
 a {
@@ -128,7 +128,7 @@ video {
 .button-contact-us {
   appearance: none;
   backface-visibility: hidden;
-  background-color: #206acc;
+  background-color: #0075a3;
   border-radius: 25px;
   border-style: none;
   box-shadow: none;
@@ -184,4 +184,65 @@ video {
     padding: 14px 22px;
     width: 176px;
   }
+}
+
+/* Hamburger menu styles */
+
+/* Position and sizing of burger button */
+.bm-burger-button {
+  position: absolute;
+  width: 36px;
+  height: 30px;
+  left: 36px;
+  top: 68px;
+}
+
+/* Color/shape of burger icon bars */
+.bm-burger-bars {
+  background: #373a47;
+}
+
+/* Position and sizing of clickable cross button */
+.bm-cross-button {
+  height: 32px;
+  width: 32px;
+}
+
+/* Color/shape of close button cross */
+.bm-cross {
+  background: #bdc3c7;
+}
+
+/*
+Sidebar wrapper styles
+Note: Beware of modifying this element as it can break the animations - you should not need to touch it in most cases
+*/
+.bm-menu-wrap {
+  position: fixed;
+  height: 100%;
+  box-sizing: border-box;
+}
+
+/* General sidebar styles */
+.bm-menu {
+  background: #004e6d;
+  padding: 2.5em 1.5em 0;
+  font-size: 1.15em;
+}
+
+/* Wrapper for item list */
+.bm-item-list {
+  color: #b8b7ad;
+  padding: 0.8em;
+  height: 500px !important;
+}
+
+/* Individual item */
+.bm-item {
+  display: inline-block;
+}
+
+/* Styling of overlay */
+.bm-overlay {
+  background: rgba(0, 0, 0, 0.3);
 }

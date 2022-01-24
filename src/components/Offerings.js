@@ -35,7 +35,7 @@ const Offerings = () => {
             </div>
             <div className='offerings__text'>
               <span className='offerings__large-text'>Materials</span>
-              <span className='offerings__small-text'>Designed for easy implementation with easy-to-find materials</span>
+              <span className='offerings__small-text'>Designed for simple implementation with easy-to-find materials</span>
             </div>
           </div>
         </div>

@@ -4,12 +4,13 @@
   flex-flow: row wrap;
 }
 
-@media (max-width: 600px) {
+/* @media (max-width: 1475px) {
   .home-container {
-    width: 80%;
+    flex-flow: column wrap;
+    width: 100%;
     justify-content: center;
   }
-}
+} */
 
 .intro-video__container {
   display: flex;
@@ -26,11 +27,14 @@
 }
 
 .motto {
+  align-self: center;
   margin: 0px;
   padding: 20px;
   font-size: 5em;
   font-family: 'quicksand-bold';
 }
+
+
 
 @media (max-width: 600px) {
   .motto {

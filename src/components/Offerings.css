@@ -1,6 +1,5 @@
 .offerings__container {
   display: flex;
-  width: 100%;
   justify-content: center;
   padding-top: 50px;
   padding-bottom: 50px;
@@ -10,7 +9,7 @@
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
-  background-color: #3a82e0;
+  background-color: #0075a3;
   border-radius: 16px;
   padding: 24px;
   width: 80%;
@@ -39,11 +38,13 @@
   .offerings-left,
   .offerings-center,
   .offerings-right {
-    padding-left: 40px;
+    justify-content: flex-start;
+    width: 80%;
+    padding-left: 15%;
   }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 660px) {
   .offerings-left,
   .offerings-center,
   .offerings-right {
@@ -74,16 +75,17 @@
   }
 }
 
-span {
+.offerings__large-text,
+.offerings__small-text {
   display: flex;
   word-wrap: break-word;
   max-width: 250px;
-  align-self: center;
   color: white;
 }
 
 @media (max-width: 1475px) {
-  span {
+  .offerings__large-text,
+  .offerings__small-text {
     max-width: 775px;
   }
 }
@@ -120,6 +122,7 @@ span {
   border-radius: 6px 25px;
   margin-right: 20px;
   width: 68px;
+  height: 68px;
   position: relative;
   top: 20px;
 }
@@ -132,6 +135,7 @@ span {
   border-radius: 6px 25px;
   margin-right: 20px;
   width: 68px;
+  height: 68px;
   position: relative;
   top: 20px;
 }
@@ -144,6 +148,7 @@ span {
   border-radius: 6px 25px;
   margin-right: 20px;
   width: 68px;
+  height: 68px;
   position: relative;
   top: 20px;
 }
