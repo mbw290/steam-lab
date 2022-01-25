@@ -80,7 +80,7 @@ li {
   flex-direction: row;
 }
 
-@media (max-width: 1300px) {
+@media (max-width: 1308px) {
   .nav-list {
     display: none;
   }
@@ -97,13 +97,28 @@ a:visited {
 
 .contact-us {
   display: flex;
+  flex-flow: row nowrap;
   justify-content: flex-end;
   padding-right: 40px;
   width: 281px;
 }
 
+@media (max-width: 1308px) {
+  .contact-us {
+    padding-right: 10%;
+  }
+}
+
+@media (max-width: 800px) {
+  .contact-us {
+    padding-right: 15%;
+  }
+}
+
 @media (max-width: 600px) {
   .contact-us {
+    display: flex;
+    justify-content: flex-start;
     padding: 0px;
     width: 100%;
   }
@@ -113,7 +128,7 @@ img {
   pointer-events: none;
 }
 
-video {
+/* video {
   margin-top: -60px;
 }
 
@@ -121,7 +136,7 @@ video {
   video {
     display: none;
   }
-}
+} */
 
 /* Contact Us Button */
 
@@ -186,15 +201,23 @@ video {
   }
 }
 
-/* Hamburger menu styles */
+/* react-hamburger-menu styles */
 
 /* Position and sizing of burger button */
+
 .bm-burger-button {
-  position: absolute;
-  width: 36px;
-  height: 30px;
-  left: 36px;
-  top: 68px;
+  display: none;
+}
+
+@media (max-width: 1308px) {
+  .bm-burger-button {
+    display: block;
+    position: absolute;
+    width: 36px;
+    height: 30px;
+    right: 36px;
+    top: 68px;
+  }
 }
 
 /* Color/shape of burger icon bars */
@@ -204,8 +227,8 @@ video {
 
 /* Position and sizing of clickable cross button */
 .bm-cross-button {
-  height: 32px;
-  width: 32px;
+  height: 60px;
+  width: 60px;
 }
 
 /* Color/shape of close button cross */
@@ -228,18 +251,22 @@ Note: Beware of modifying this element as it can break the animations - you shou
   background: #004e6d;
   padding: 2.5em 1.5em 0;
   font-size: 1.15em;
+  height: 100%;
 }
 
 /* Wrapper for item list */
 .bm-item-list {
   color: #b8b7ad;
   padding: 0.8em;
-  height: 500px !important;
+  height: 80% !important;
 }
 
 /* Individual item */
 .bm-item {
   display: inline-block;
+  color: white !important;
+  font-weight: bolder;
+  padding-bottom: 16px;
 }
 
 /* Styling of overlay */

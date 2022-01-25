@@ -1,6 +1,8 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import kidsHome from '../../static/images/kids-home.png'
+import kidsHome2 from '../../static/images/kids-home2.png'
+import redFlask from '../../static/images/red_flask.png'
 import Offerings from '../Offerings'
 import './Home.css'
 import '../../App.css'
@@ -31,10 +33,28 @@ const Home = () => {
           </div>
         </div>
         <div className='kids-home'>
-          <img src={kidsHome} alt='Science Kids' />
+          <img className='red-flask' src={kidsHome} alt='Science Kids' />
         </div>
       </div>
+      <div>
         <Offerings />
+      </div>
+        <div className='overview__container'>
+          <div className='overview__title'>
+            <h1>Overview</h1>
+            <div className='red-flask'>
+              <img src={ redFlask } alt="red flask" />
+            </div>
+          </div>
+          <div className='overview__content'>
+            <div className='overview__image'>
+              <img className='kids-home2' src={ kidsHome2 } alt="children with laptops" />
+            </div>
+            <div className='overview__text'>
+              overview text
+            </div>
+          </div>
+        </div>
     </>
   )
 }

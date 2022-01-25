@@ -7,8 +7,8 @@ function App() {
 
   return (
     <div className="App">
-    {/* Hamburger menu (only visible when screen width less than 1308px) */}
-      <Menu>
+      {/* Hamburger menu (only visible when screen width less than 1308px) */}
+      <Menu right>
         <Link to='/'>HOME</Link>
         <Link to='/mission'>OUR MISSION</Link>
         <Link to='/about'>ABOUT US</Link>
