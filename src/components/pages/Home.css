@@ -48,7 +48,7 @@
 }
 
 .description {
-  font-size: 1.25em;
+  font-size: 1.5em;
   inline-size: 524px;
   overflow-wrap: break-word;
   padding: 20px;
@@ -158,7 +158,7 @@
 
 .overview__container {
   display: flex;
-  flex-flow: column wrap;
+  flex-flow: column nowrap;
   justify-content: center;
   padding-left: 4%;
   padding-right: 4%;
@@ -171,10 +171,22 @@
   height: 100px;
 }
 
+.overview__heading {
+  text-decoration-line: underline;
+  text-decoration-style: wavy;
+  text-underline-offset: 20px;
+  font-size: 2.5em;
+  font-weight: bold;
+}
+
+.red-flask {
+  margin-left: 40px;
+}
+
 .red-flask img {
   max-width: 80%;
   max-height: 80%;
-  float: left;
+  float: right;
 }
 
 .overview__content {
@@ -183,7 +195,30 @@
   justify-content: center;
 }
 
+.overview__image {
+  display: flex;
+  justify-content: center;
+  align-self: center;
+}
+
+@media (max-width: 336px) {
+  .overview__image {
+    display: none;
+  }
+}
+
 .overview__image img {
-  max-width: 80%;
-  max-height: 80%;
+  max-width: 70%;
+  max-height: 70%;
+}
+
+.overview__text {
+  display: flex;
+  align-self: center;
+  font-size: 1.5em;
+}
+
+.overview__text li {
+  margin-top: 8px;
+  margin-bottom: 8px;
 }

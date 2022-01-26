@@ -18,7 +18,7 @@ const Home = () => {
       <div className='home-container'>
         <div className='home-text'>
           <p className='motto'>Where Excitement<br />and Learning<br /><span className='blue-text'>Come Together</span></p>
-          <div className='description'>Online STEAM video challenges to support students, teachers, and expanded learning programs</div>
+          <span className='description'>Online STEAM video challenges to support students, teachers, and expanded learning programs</span>
           <div className='buttons__container'>
             <div className='contact-button__container'>
               <Link to='/contact'>
@@ -41,7 +41,7 @@ const Home = () => {
       </div>
         <div className='overview__container'>
           <div className='overview__title'>
-            <h1>Overview</h1>
+            <span class='overview__heading'>Overview</span>
             <div className='red-flask'>
               <img src={ redFlask } alt="red flask" />
             </div>
@@ -51,7 +51,16 @@ const Home = () => {
               <img className='kids-home2' src={ kidsHome2 } alt="children with laptops" />
             </div>
             <div className='overview__text'>
-              overview text
+              <ul>
+                <li>Videos that support science curriculum</li>
+                <li>Perfect for expanded learning programs</li>
+                <li>Grade K-6 videos aligned to the NGSS</li>
+                <li>Encourage engagement with a STEAM challenge</li>
+                <li>Activities created with a easy-to-find materials</li>
+                <li>Mr Reed demonstrates step-by-step instructions in every video</li>
+                <li>Six short videos per grade level</li>
+                <li>Resources for extending and enriching student learning</li>
+              </ul>
             </div>
           </div>
         </div>

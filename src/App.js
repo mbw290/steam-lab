@@ -1,9 +1,12 @@
 import { Link, Outlet } from 'react-router-dom'
+import { useState } from 'react'
 import Menu from 'react-burger-menu/lib/menus/slide'
 import Logo from './static/images/logo.png'
 import './App.css'
 
 function App() {
+
+  const [underline, setUnderline] = useState(true)
 
   return (
     <div className="App">
