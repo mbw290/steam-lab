@@ -1,0 +1,39 @@
+.footer__container {
+  display: flex;
+  flex-flow: column wrap;
+  background-color: #0075a3;
+  color: white;
+  height: 400px;
+  padding: 60px;
+}
+
+.footer__main {
+  display: flex;
+  flex-flow: row wrap;
+  flex-grow: 1;
+}
+
+.footer__logo {
+  display: flex;
+  flex-grow: 1;
+  justify-content: center;
+}
+
+.footer__steam-lab {
+  display: flex;
+  flex-grow: 1;
+  justify-content: center;
+}
+
+.footer__legal {
+  display: flex;
+  flex-grow: 1;
+  justify-content: center;
+}
+
+.footer__copyright {
+  display: flex;
+  flex-grow: 1;
+  justify-content: center;
+  align-self: center;
+}

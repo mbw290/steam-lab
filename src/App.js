@@ -1,12 +1,10 @@
-import { Link, Outlet } from 'react-router-dom'
-import { useState } from 'react'
+import { Link, Outlet, NavLink } from 'react-router-dom'
 import Menu from 'react-burger-menu/lib/menus/slide'
 import Logo from './static/images/logo.png'
+import Footer from './components/Footer'
 import './App.css'
 
 function App() {
-
-  const [underline, setUnderline] = useState(true)
 
   return (
     <div className="App">
@@ -27,19 +25,19 @@ function App() {
         <nav className='nav-list'>
           <ul>
             <li className='nav-button'>
-              <Link to='/'>HOME</Link>
+              <NavLink to='/' activeClassName="underline">HOME</NavLink>
             </li>
             <li className='nav-button'>
-              <Link to='/mission'>OUR MISSION</Link>
+              <NavLink to='/mission' activeClassName="underline">OUR MISSION</NavLink>
             </li>
             <li className='nav-button'>
-              <Link to='/about'>ABOUT US</Link>
+              <NavLink to='/about' activeClassName="underline">ABOUT US</NavLink>
             </li>
             <li className='nav-button'>
-              <Link to='/offerings'>OFFERINGS</Link>
+              <NavLink to='/offerings' activeClassName="underline">OFFERINGS</NavLink>
             </li>
             <li className='nav-button'>
-              <Link to='/samples'>SAMPLE LESSONS</Link>
+              <NavLink to='/samples' activeClassName="underline">SAMPLE LESSONS</NavLink>
             </li>
           </ul>
         </nav>
@@ -50,6 +48,9 @@ function App() {
         </div>
       </div>
       <Outlet />
+      <div className='footer'>
+        <Footer />
+      </div>
     </div>
   )
 }

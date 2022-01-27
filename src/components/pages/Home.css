@@ -75,12 +75,17 @@
   justify-content: center;
 }
 
-@media (max-width: 1300px) {
+.kids-home img {
+  max-width: 85%;
+  max-width: 85%;
+}
+
+/* @media (max-width: 1300px) {
   .kids-home img {
     max-width: 85%;
     max-height: 85%;
   }
-}
+} */
 
 @media (max-width: 600px) {
   .kids-home {
@@ -162,6 +167,7 @@
   justify-content: center;
   padding-left: 4%;
   padding-right: 4%;
+  margin-bottom: 75px;
 }
 
 .overview__title {
@@ -219,6 +225,6 @@
 }
 
 .overview__text li {
-  margin-top: 8px;
-  margin-bottom: 8px;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }

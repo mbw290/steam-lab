@@ -41,7 +41,7 @@ const Home = () => {
       </div>
         <div className='overview__container'>
           <div className='overview__title'>
-            <span class='overview__heading'>Overview</span>
+            <span className='overview__heading'>Overview</span>
             <div className='red-flask'>
               <img src={ redFlask } alt="red flask" />
             </div>
