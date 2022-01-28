@@ -80,6 +80,13 @@
   max-width: 85%;
 }
 
+@media (max-width: 1655px) {
+  .kids-home img {
+    max-width: 60%;
+    max-width: 60%;
+  }
+}
+
 /* @media (max-width: 1300px) {
   .kids-home img {
     max-width: 85%;
@@ -87,11 +94,11 @@
   }
 } */
 
-@media (max-width: 600px) {
+/* @media (max-width: 600px) {
   .kids-home {
     display: none;
   }
-}
+} */
 
 .blue-text {
   color: rgb(0, 96, 128);

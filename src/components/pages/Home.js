@@ -33,7 +33,7 @@ const Home = () => {
           </div>
         </div>
         <div className='kids-home'>
-          <img className='red-flask' src={kidsHome} alt='Science Kids' />
+          <img src={kidsHome} alt='Science Kids' />
         </div>
       </div>
       <div>
