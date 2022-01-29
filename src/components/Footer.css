@@ -41,6 +41,13 @@
   justify-content: space-around;
 }
 
+@media (max-width: 500px) {
+  .footer__main {
+    flex-flow: column wrap;
+    justify-content: center;
+  }
+}
+
 .footer__logo,
 .footer__steam-lab,
 .footer__legal {
@@ -48,6 +55,15 @@
   justify-content: center;
   align-self: flex-start;
   flex-flow: column wrap;
+}
+
+@media (max-width: 500px) {
+  .footer__logo,
+  .footer__steam-lab,
+  .footer__legal {
+    max-width: 120px;
+    justify-content: center;
+  }
 }
 
 .footer__logo {
@@ -62,9 +78,8 @@
 }
 
 @media (max-width: 926px) {
-  .footer__logo img {
-    max-height: 40%;
-    max-width: 40%;
+  .footer__logo {
+    display: none;
   }
 }
 

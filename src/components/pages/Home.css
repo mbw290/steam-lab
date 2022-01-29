@@ -4,28 +4,6 @@
   flex-flow: row wrap;
 }
 
-/* @media (max-width: 1475px) {
-  .home-container {
-    flex-flow: column wrap;
-    width: 100%;
-    justify-content: center;
-  }
-} */
-
-/* .intro-video__container {
-  display: flex;
-  justify-content: center;
-  height: 350px;
-  overflow: hidden;
-  margin-bottom: 60px;
-}
-
-@media (max-width: 600px) {
-  .intro-video__container {
-    display: none;
-  }
-} */
-
 .motto {
   align-self: center;
   margin: 0px;
@@ -75,30 +53,18 @@
   justify-content: center;
 }
 
-.kids-home img {
-  max-width: 85%;
-  max-width: 85%;
-}
-
-@media (max-width: 1655px) {
-  .kids-home img {
-    max-width: 60%;
-    max-width: 60%;
-  }
-}
-
-/* @media (max-width: 1300px) {
+@media (max-width: 1614px) {
   .kids-home img {
     max-width: 85%;
     max-height: 85%;
   }
-} */
+}
 
-/* @media (max-width: 600px) {
+@media (max-width: 600px) {
   .kids-home {
     display: none;
   }
-} */
+}
 
 .blue-text {
   color: rgb(0, 96, 128);
