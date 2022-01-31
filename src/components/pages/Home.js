@@ -48,7 +48,7 @@ const Home = () => {
           </div>
           <div className='overview__content'>
             <div className='overview__image'>
-              <img className='kids-home2' src={ kidsHome2 } alt="children with laptops" />
+              <img className='kids-home2' src={kidsHome2} alt="children with laptops" />
             </div>
             <div className='overview__text'>
               <ul>

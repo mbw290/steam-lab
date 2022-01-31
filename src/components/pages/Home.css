@@ -2,6 +2,7 @@
   display: flex;
   justify-content: space-evenly;
   flex-flow: row wrap;
+  width: 100%
 }
 
 .motto {
@@ -187,14 +188,20 @@
 }
 
 .overview__image img {
-  max-width: 70%;
-  max-height: 70%;
+  max-width: 60%;
+  max-height: 60%;
 }
 
 .overview__text {
   display: flex;
   align-self: center;
   font-size: 1.5em;
+}
+
+@media (max-width: 600px) {
+  .overview__text {
+    font-size: 1.25em;
+  }
 }
 
 .overview__text li {

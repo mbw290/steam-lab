@@ -1,0 +1,107 @@
+.mission__container {
+    display: flex;
+    flex-flow: column nowrap;
+    margin-top: 40px;
+    padding-left: 15%;
+    padding-right: 15%;
+    justify-content: center;
+  }
+  
+  @media (max-width: 1460px) {
+    .mission__container {
+      padding-left: 10%;
+      padding-right: 10%;
+    }
+  }
+  
+  .mission__heading-container {
+    display: flex;
+    margin-left: 350px;
+  }
+  
+  @media (max-width: 1460px) {
+    .mission__heading-container {
+      margin: 0px;
+      justify-content: center;
+    }
+  }
+  
+  .mission__joe-container,
+  .mission__tish-container {
+    display: flex;
+    flex-flow: row nowrap;
+    width: 100%;
+  }
+  
+  @media (max-width: 1460px) {
+    .mission__joe-container,
+    .mission__tish-container {
+      flex-flow: column nowrap;
+    }
+  }
+  
+  .mission__heading {
+    text-decoration-line: underline;
+    text-decoration-style: wavy;
+    text-underline-offset: 20px;
+    font-size: 2.5em;
+    font-weight: bold;
+  }
+  
+  .mission__joe-image img,
+  .mission__tish-image img {
+    margin-top: 100px;
+  }
+  
+  @media (max-width: 1460px) {
+    .mission__joe-image,
+    .mission__tish-image {
+      display: flex;
+      flex-flow: column nowrap;
+      justify-content: center;
+      align-items: center;
+    }
+  
+    .mission__joe-image img,
+    .mission__tish-image img {
+      max-width: 300px;
+      max-height: 300px;
+    }
+  }
+  
+  .mission__name-text {
+    text-align: center;
+    color: black;
+    font-weight: bold;
+    font-size: 2em;
+  }
+  
+  .mission__text {
+    margin-left: 40px;
+  }
+  
+  @media (max-width: 1460px) {
+    .mission__text {
+      margin: 0px;
+    }
+  }
+  
+  .mission__body-text {
+    display: flex;
+    vertical-align: center;
+    font-size: 1.5em;
+    overflow-wrap: break-word;
+    padding-top: 75px;
+  }
+  
+  @media (max-width: 1460px) {
+    .mission__body-text {
+      padding-top: 20px;
+    }
+  }
+  
+  @media (max-width: 600px) {
+    .mission__body-text {
+      font-size: 1.25em;
+    }
+  }

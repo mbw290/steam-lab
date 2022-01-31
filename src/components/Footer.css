@@ -12,13 +12,13 @@
 @media (max-width: 925px) {
   .footer__container {
     flex-flow: column nowrap;
-    height: 550px;
+    height: 400px;
   }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 500px) {
   .footer__container {
-    height: 650px;
+    height: 550px;
   }
 }
 

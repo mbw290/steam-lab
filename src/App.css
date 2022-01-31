@@ -94,17 +94,21 @@ nav li {
 
 a {
   text-decoration: none;
+}
+
+.nav-button a {
+  text-decoration: none;
   color: black;
   padding-bottom: 6px;
 }
 
-.active {
+.nav-button .active {
   border-bottom-style: solid;
   border-width: 3px;
   border-color: #0075a3;
 }
 
-a:visited {
+.nav-button a:visited {
   color: black;
 }
 
@@ -204,7 +208,7 @@ img {
   }
 }
 
-/* react-hamburger-menu styles */
+/* react-burger-menu styles */
 
 /* Position and sizing of burger button */
 
