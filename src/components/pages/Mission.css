@@ -14,28 +14,44 @@
     }
   }
   
-  .mission__heading-container {
+  .mission__heading-container,
+  .mission__heading-container-learning-loss {
     display: flex;
-    margin-left: 350px;
+    padding-bottom: 40px;
+  }
+
+  .mission__heading-container-learning-loss {
+    display: flex;
+    padding-top: 40px;
+  }
+
+  .mission__content-container {
+    display: flex;
+    flex-flow: column nowrap;
   }
   
   @media (max-width: 1460px) {
-    .mission__heading-container {
+    .mission__heading-container,
+    .mission__heading-container-learning-loss {
       margin: 0px;
       justify-content: center;
     }
   }
+
+  @media (max-width: 1460px) {
+    .mission__heading-container {
+      padding-top: 40px;
+    }
+  }
   
-  .mission__joe-container,
-  .mission__tish-container {
+  .mission__image-container {
     display: flex;
     flex-flow: row nowrap;
     width: 100%;
   }
   
   @media (max-width: 1460px) {
-    .mission__joe-container,
-    .mission__tish-container {
+    .mission__image-container {
       flex-flow: column nowrap;
     }
   }
@@ -48,22 +64,31 @@
     font-weight: bold;
   }
   
-  .mission__joe-image img,
-  .mission__tish-image img {
-    margin-top: 100px;
+  .mission__image-our-mission img {
+    margin-top: 110px;
+  }
+
+  .mission__image-learning-loss img {
+    max-width: 300px;
+    margin-top: 234px;
+    border-radius: 20px;
+    border-width: 3px;
+    border-color: #0075a3;
+    border-style: solid;
   }
   
   @media (max-width: 1460px) {
-    .mission__joe-image,
-    .mission__tish-image {
+    .mission__image-our-mission,
+    .mission__image-learning-loss {
       display: flex;
       flex-flow: column nowrap;
       justify-content: center;
       align-items: center;
     }
   
-    .mission__joe-image img,
-    .mission__tish-image img {
+    .mission__image-our-mission img,
+    .mission__image-learning-loss img {
+      margin-top: 25px;
       max-width: 300px;
       max-height: 300px;
     }
@@ -91,12 +116,18 @@
     vertical-align: center;
     font-size: 1.5em;
     overflow-wrap: break-word;
-    padding-top: 75px;
+    margin-bottom: 75px;
+  }
+
+  .mission__section-heading {
+    font-size: 1.25em;
+    font-weight: bold;
   }
   
   @media (max-width: 1460px) {
     .mission__body-text {
-      padding-top: 20px;
+      padding-top: 0px;
+      margin-bottom: 20px;
     }
   }
   
