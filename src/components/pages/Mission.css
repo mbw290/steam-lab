@@ -123,6 +123,10 @@
     font-size: 1.25em;
     font-weight: bold;
   }
+
+  .video__container {
+    margin-bottom: 75px;
+  }
   
   @media (max-width: 1460px) {
     .mission__body-text {
@@ -135,4 +139,8 @@
     .mission__body-text {
       font-size: 1.25em;
     }
+  }
+
+  .citation {
+    font-size: .75em;
   }
