@@ -1,6 +1,7 @@
 import React from 'react'
 import RocketLogo from '../../static/images/rocket_logo.png'
 import ChemistryGirls from '../../static/images/chemistry-girls.jpg'
+import KidsReading from '../../static/images/kids_reading.jpg'
 import './Mission.css'
 
 const Mission = () => {
@@ -31,7 +32,7 @@ const Mission = () => {
       </div>
       <div className='mission__image-container'>
         <div className='mission__image-learning-loss'>
-          <img src={ ChemistryGirls } alt="Rocket logo" />
+          <img src={ ChemistryGirls } alt="Girls in chemistry class" />
         </div>
         <div className='mission__text'>
           <div className='mission__heading-container-learning-loss'>
@@ -68,8 +69,8 @@ const Mission = () => {
         </div>
       </div>
       <div className='mission__image-container'>
-        <div className='mission__image-our-mission'>
-          <img src={ RocketLogo } alt="Rocket logo" />
+        <div className='mission__image-english-learners'>
+          <img src={ KidsReading } alt="Kids reading" />
         </div>
         <div className='mission__text'>
           <div className='mission__heading-container'>

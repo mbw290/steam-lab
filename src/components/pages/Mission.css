@@ -76,10 +76,22 @@
     border-color: #0075a3;
     border-style: solid;
   }
+
+  .mission__image-english-learners {
+    margin-top: 220px;
+  }
+
+  .mission__image-english-learners img {
+    border-radius: 20px;
+    border-width: 3px;
+    border-color: #0075a3;
+    border-style: solid;
+  }
   
   @media (max-width: 1460px) {
     .mission__image-our-mission,
-    .mission__image-learning-loss {
+    .mission__image-learning-loss,
+    .mission__image-english-learners {
       display: flex;
       flex-flow: column nowrap;
       justify-content: center;
@@ -87,7 +99,8 @@
     }
   
     .mission__image-our-mission img,
-    .mission__image-learning-loss img {
+    .mission__image-learning-loss img,
+    .mission__image-english-learners img {
       margin-top: 25px;
       max-width: 300px;
       max-height: 300px;
