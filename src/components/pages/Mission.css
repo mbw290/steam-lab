@@ -14,14 +14,15 @@
     }
   }
   
-  .mission__heading-container,
-  .mission__heading-container-learning-loss {
+  .mission__heading-container-our-mission,
+  .mission__heading-container-learning-loss,
+  .mission__heading-container-english-learners {
     display: flex;
     padding-bottom: 40px;
   }
 
-  .mission__heading-container-learning-loss {
-    display: flex;
+  .mission__heading-container-learning-loss,
+  .mission__heading-container-english-learners {
     padding-top: 40px;
   }
 
@@ -77,8 +78,8 @@
     border-style: solid;
   }
 
-  .mission__image-english-learners {
-    margin-top: 220px;
+  .mission__image-english-learners img {
+    margin-top: 194px;
   }
 
   .mission__image-english-learners img {
@@ -129,7 +130,7 @@
     vertical-align: center;
     font-size: 1.5em;
     overflow-wrap: break-word;
-    margin-bottom: 75px;
+    /* margin-bottom: 75px; */
   }
 
   .mission__section-heading {

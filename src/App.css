@@ -23,6 +23,13 @@
   src: url(./fonts/Quicksand-SemiBold.ttf);
 }
 
+* {
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-tap-highlight-color: transparent;
+}
+
 html,
 body {
   margin: 0px;

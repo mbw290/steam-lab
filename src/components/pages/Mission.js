@@ -12,7 +12,7 @@ const Mission = () => {
           <img src={ RocketLogo } alt="Rocket logo" />
         </div>
         <div className='mission__text'>
-          <div className='mission__heading-container'>
+          <div className='mission__heading-container-our-mission'>
             <span className='mission__heading'>Our Mission</span>
           </div>
           <p className='mission__body-text'>
@@ -61,11 +61,11 @@ const Mission = () => {
               flexibility in that they may be used to address both philosophies.</p>
             </div>
           </div>
-          <div className='video__container'>
+          {/* <div className='video__container'>
             <video playsInline controls style={{opacity: 1, maxWidth: 1200, maxHeight: 500}}>
               <source src="https://mrreedssteamlab.s3-us-west-1.amazonaws.com/Our+Philosophy.mp4" type="video/mp4" />
             </video>
-          </div>
+          </div> */}
         </div>
       </div>
       <div className='mission__image-container'>
@@ -73,10 +73,10 @@ const Mission = () => {
           <img src={ KidsReading } alt="Kids reading" />
         </div>
         <div className='mission__text'>
-          <div className='mission__heading-container'>
+          <div className='mission__heading-container-english-learners'>
             <span className='mission__heading'>English Learners</span>
           </div>
-          <p className='mission__body-text'>
+          <div className='mission__body-text'>
             <div>
               <p className='mission__section-heading'>Transforming Classrooms, Schools, and Lives</p>
               <p>English Language learners consist of a diverse group of students who typically lack access to Science,
@@ -113,7 +113,7 @@ const Mission = () => {
               Transforming Classrooms, Schools, and Lives. Washington, DC: The National Academies Press.
               <br />Source: <a href='https://doi.org/10.17226/25182'>https://doi.org/10.17226/25182</a>.</cite>
             </div>
-          </p>
+          </div>
         </div>
       </div>
     </div>

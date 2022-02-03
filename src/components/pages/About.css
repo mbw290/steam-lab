@@ -33,10 +33,19 @@
   width: 100%;
 }
 
+.about__tish-container .about__body-text {
+  margin-top: 80px;
+}
+
 @media (max-width: 1460px) {
   .about__joe-container,
   .about__tish-container {
     flex-flow: column nowrap;
+  }
+
+  .about__tish-container .about__body-text,
+  .about__joe-container .about__body-text {
+    margin-top: 0px;
   }
 }
 
