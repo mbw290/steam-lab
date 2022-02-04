@@ -17,7 +17,7 @@ const TextInput = ({ label, ...props }) => {
 const ContactForm = () => {
   return (
     <>
-      <h1>Subscribe!</h1>
+      <h1>Contact us for more information about Mr Reed's Steam Lab!</h1>
       <Formik
         initialValues={{
           firstName: "",
