@@ -2,8 +2,6 @@ import { Formik, Form, useField } from "formik";
 import * as Yup from "yup";
 
 const TextInput = ({ label, ...props }) => {
-  // useField() returns [formik.getFieldProps(), formik.getFieldMeta()]
-  // which we can spread on <input> and alse replace ErrorMessage entirely.
   const [field, meta] = useField(props);
   return (
     <>
@@ -16,7 +14,6 @@ const TextInput = ({ label, ...props }) => {
   );
 };
 
-// And now we can use these
 const ContactForm = () => {
   return (
     <>
