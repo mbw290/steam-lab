@@ -54,6 +54,12 @@ body {
   align-items: center;
 }
 
+@media (max-width: 600px) {
+  .navigation {
+    flex-flow: column nowrap;
+  }
+}
+
 .nav-button {
   font-family: 'quicksand-bold';
   user-select: none;
@@ -80,7 +86,7 @@ nav li {
 
 @media (max-width: 600px) {
   .logo-left {
-    display: none;
+    margin-bottom: 40px;
   }
 }
 
@@ -136,6 +142,12 @@ a {
 @media (max-width: 800px) {
   .contact-us {
     padding-right: 15%;
+  }
+}
+
+@media (max-width: 600px) {
+  .contact-us {
+    padding-right: 0px;
   }
 }
 
@@ -231,6 +243,12 @@ img {
     height: 30px;
     right: 36px;
     top: 68px;
+  }
+}
+
+@media (max-width: 600px) {
+  .bm-burger-button {
+    top: 162px;
   }
 }
 

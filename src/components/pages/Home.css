@@ -5,6 +5,12 @@
   width: 100%
 }
 
+@media (max-width: 600px) {
+  .home-container {
+    margin-top: 80px;
+  }
+}
+
 .motto {
   align-self: center;
   margin: 0px;
