@@ -26,6 +26,8 @@
 }
 
 .contact__heading {
+  display: flex;
+  justify-content: center;
   text-decoration-line: underline;
   text-decoration-style: wavy;
   text-underline-offset: 20px;
