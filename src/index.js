@@ -1,6 +1,6 @@
 import * as React from "react"
 import * as ReactDOM from "react-dom"
-import { BrowserRouter, Routes, Route } from "react-router-dom"
+import { BrowserRouter, Routes, Route, HashRouter } from "react-router-dom"
 import ScrollToTop from "./components/ScrollToTop"
 import Home from "./components/pages/Home"
 import Mission from "./components/pages/Mission"
@@ -11,7 +11,7 @@ import Contact from "./components/pages/Contact"
 import App from "./App"
 
 ReactDOM.render(
-  <BrowserRouter basename={ process.env.PUBLIC_URL }>
+  <HashRouter>
     <ScrollToTop />
     <Routes>
       <Route path="/" element={<App />}>
@@ -23,6 +23,6 @@ ReactDOM.render(
         <Route path="/contact" element={<Contact />} />
       </Route>
     </Routes>
-  </BrowserRouter>,
+  </HashRouter>,
   document.getElementById("root")
 );

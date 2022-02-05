@@ -5,6 +5,12 @@
   width: 100%;
 }
 
+@media (max-width: 600px) {
+  .contact__form-outer-container {
+    margin-top: 80px;
+  }
+}
+
 .contact__form-inner-container {
   display: flex;
   flex-flow: column nowrap;
