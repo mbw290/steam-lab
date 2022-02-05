@@ -1,6 +1,7 @@
 import * as React from "react"
 import * as ReactDOM from "react-dom"
 import { BrowserRouter, Routes, Route } from "react-router-dom"
+import ScrollToTop from "./components/ScrollToTop"
 import Home from "./components/pages/Home"
 import Mission from "./components/pages/Mission"
 import About from "./components/pages/About"
@@ -11,6 +12,7 @@ import App from "./App"
 
 ReactDOM.render(
   <BrowserRouter basename={ process.env.PUBLIC_URL }>
+    <ScrollToTop />
     <Routes>
       <Route path="/" element={<App />}>
         <Route index element={<Home />} />

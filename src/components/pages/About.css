@@ -14,6 +14,12 @@
   }
 }
 
+@media (max-width: 600px) {
+  .about__container {
+    margin-top: 80px;
+  }
+}
+
 .about__heading-container {
   display: flex;
   margin-left: 350px;

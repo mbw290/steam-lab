@@ -13,6 +13,12 @@
       padding-right: 10%;
     }
   }
+
+  @media (max-width: 600px) {
+    .mission__container {
+      margin-top: 60px;
+    }
+  }
   
   .mission__heading-container-our-mission,
   .mission__heading-container-learning-loss,
