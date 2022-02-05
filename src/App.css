@@ -62,7 +62,7 @@ body {
 }
 
 .nav-button a:hover {
-  color: #0075a3;
+  color: #0075a3 !important;
 }
 
 nav li {
@@ -241,8 +241,9 @@ img {
 
 /* Position and sizing of clickable cross button */
 .bm-cross-button {
-  height: 60px;
-  width: 60px;
+  transform: scale(1.50);
+  height: 24px;
+  width: 24px;
 }
 
 /* Color/shape of close button cross */

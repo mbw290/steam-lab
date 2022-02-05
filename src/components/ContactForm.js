@@ -1,23 +1,43 @@
-import { Formik, Form, useField } from "formik";
-import * as Yup from "yup";
+import { Formik, Form, useField } from "formik"
+import * as Yup from "yup"
+import './ContactForm.css'
 
 const TextInput = ({ label, ...props }) => {
   const [field, meta] = useField(props);
+
   return (
     <>
-      <label htmlFor={props.id || props.name}>{label}</label>
-      <input className="text-input" {...field} {...props} />
-      {meta.touched && meta.error ? (
+      <div className='contact__label-container'>
+        <label htmlFor={props.id || props.name}>{label}</label>
+        { meta.touched && meta.error ? (
         <div className="error">{meta.error}</div>
-      ) : null}
+        ) : null }
+      </div>
+      <input className="text-input" {...field} {...props} />
     </>
-  );
-};
+  )
+}
+
+const PhoneInput = ({ label, ...props }) => {
+  const [field, meta] = useField(props);
+
+  return (
+    <>
+      <div className='contact__label-container'>
+        <label htmlFor={props.id || props.name}>{label}</label>
+        { meta.touched && meta.error ? (
+        <div className="error">{meta.error}</div>
+        ) : '(optional)' }
+      </div>
+      <input className="text-input" {...field} {...props} />
+    </>
+  )
+}
 
 const ContactForm = () => {
   return (
-    <>
-      <h1>Contact us for more information about Mr Reed's STEAM Lab!</h1>
+    <div className='contact__form-inner-container'>
+      <div className="contact__heading">Contact Us</div>
       <Formik
         initialValues={{
           firstName: "",
@@ -28,27 +48,33 @@ const ContactForm = () => {
 
         validationSchema={Yup.object({
           firstName: Yup.string()
-            .max(15, "Must be 15 characters or less")
-            .required("Required"),
+            .max(15, "* Must be 15 characters or less")
+            .required("* Required"),
           lastName: Yup.string()
-            .max(20, "Must be 20 characters or less")
-            .required("Required"),
+            .max(20, "* Must be 20 characters or less")
+            .required("* Required"),
           email: Yup.string()
-            .email("Invalid email addresss`")
-            .required("Required"),
+            .email("* Invalid email address")
+            .required("* Required"),
           phoneNumber: Yup.string()
             .matches(
               /^((\\+[1-9]{1,4}[ \\-]*)|(\\([0-9]{2,3}\\)[ \\-]*)|([0-9]{2,4})[ \\-]*)*?[0-9]{3,4}?[ \\-]*[0-9]{3,4}?$/,
-              "Phone number is not valid"
+              "* Invalid phone number"
               )
         })}
         
         onSubmit={async (values, { setSubmitting }) => {
-          await new Promise(r => setTimeout(r, 500));
+          await new Promise(r => setTimeout(r, 500))
           setSubmitting(false);
         }}
       >
-        <Form>
+      <div className="contact__form-container">
+        <div className="contact__message">
+          Please provide your contact information below and we will be in touch to discuss any questions you may have
+          about Mr Reed's STEAM Lab.
+          <p>We look foward to hearing from you!</p>
+        </div>
+        <Form className="contact__form">
           <TextInput
             label="First Name"
             name="firstName"
@@ -67,17 +93,20 @@ const ContactForm = () => {
             type="email"
             placeholder="email@example.com"
           />
-          <TextInput
+          <PhoneInput
             label='Phone Number'
             name='phoneNumber'
             type='tel'
             placeholder='(555) 555-5555'
           />
-          <button type="submit">Submit</button>
+          <div className='contact__submit-container'>
+            <button className='contact__submit-button' type="submit">Submit</button>
+          </div>
         </Form>
+      </div>
       </Formik>
-    </>
+    </div>
   );
 };
 
-export default ContactForm;
+export default ContactForm

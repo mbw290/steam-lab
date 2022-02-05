@@ -32,8 +32,9 @@
   }
   
   @media (max-width: 1460px) {
-    .mission__heading-container,
-    .mission__heading-container-learning-loss {
+    .mission__heading-container-our-mission,
+    .mission__heading-container-learning-loss,
+    .mission__heading-container-english-learners {
       margin: 0px;
       justify-content: center;
     }
@@ -79,7 +80,7 @@
   }
 
   .mission__image-english-learners img {
-    margin-top: 194px;
+    margin-top: 236px;
   }
 
   .mission__image-english-learners img {
