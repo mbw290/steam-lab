@@ -17,7 +17,7 @@ const Offerings = () => {
             </div>
             <div className='offerings__text'>
               <span className='offerings__large-text'>Videos</span>
-              <span className='offerings__small-text'>42 challenge videos (6 per grade-level, K-6)</span><br />
+              <span className='offerings__small-text'>42 challenge videos (six per grade-level, Kindergarten through sixth)</span><br />
             </div>
           </div>
           <div className='offerings-center'>
