@@ -66,11 +66,12 @@
   max-height: 100%;
 }
 
-/* @media (max-width: 600px) {
+@media (max-width: 600px) {
   .kids-home {
-    display: none;
+    max-width: 90%;
+    max-height: 90%;
   }
-} */
+}
 
 .blue-text {
   color: rgb(0, 96, 128);
