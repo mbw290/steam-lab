@@ -150,6 +150,12 @@
   margin-bottom: 75px;
 }
 
+@media (max-width: 1408px) {
+  .overview__container {
+    margin-bottom: 20px;
+  }
+}
+
 .overview__title {
   display: flex;
   justify-content: center;

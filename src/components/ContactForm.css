@@ -15,7 +15,7 @@
   display: flex;
   flex-flow: column nowrap;
   justify-content: center;
-  width: 500px;
+  width: 700px;
 }
 
 .contact__form-container {
@@ -105,7 +105,7 @@ label {
 }
 
 .error {
-  color: white;
+  color: #ff5b14;
   font-weight: bold;
 }
 

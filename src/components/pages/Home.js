@@ -6,6 +6,7 @@ import redFlask from '../../static/images/red_flask.png'
 import Offerings from '../Offerings'
 import './Home.css'
 import '../../App.css'
+import TechDetails from '../TechDetails'
 
 const Home = () => {
   return (
@@ -39,31 +40,32 @@ const Home = () => {
       <div>
         <Offerings />
       </div>
-        <div className='overview__container'>
-          <div className='overview__title'>
-            <span className='overview__heading'>Overview</span>
-            <div className='red-flask'>
-              <img src={ redFlask } alt="red flask" />
-            </div>
-          </div>
-          <div className='overview__content'>
-            <div className='overview__image'>
-              <img className='kids-home2' src={kidsHome2} alt="children with laptops" />
-            </div>
-            <div className='overview__text'>
-              <ul>
-                <li>Videos that support science curriculum</li>
-                <li>Perfect for expanded learning programs</li>
-                <li>Grade K-6 videos aligned to the NGSS</li>
-                <li>Encourage engagement with a STEAM challenge</li>
-                <li>Activities created with a easy-to-find materials</li>
-                <li>Mr Reed demonstrates step-by-step instructions in every video</li>
-                <li>Six short videos per grade level</li>
-                <li>Resources for extending and enriching student learning</li>
-              </ul>
-            </div>
+      <div className='overview__container'>
+        <div className='overview__title'>
+          <span className='overview__heading'>Overview</span>
+          <div className='red-flask'>
+            <img src={ redFlask } alt="red flask" />
           </div>
         </div>
+        <div className='overview__content'>
+          <div className='overview__image'>
+            <img className='kids-home2' src={kidsHome2} alt="children with laptops" />
+          </div>
+          <div className='overview__text'>
+            <ul>
+              <li>Videos that support science curriculum</li>
+              <li>Perfect for expanded learning programs</li>
+              <li>Grade K-6 videos aligned to the NGSS</li>
+              <li>Encourage engagement with a STEAM challenge</li>
+              <li>Activities created with a easy-to-find materials</li>
+              <li>Mr Reed demonstrates step-by-step instructions in every video</li>
+              <li>Six short videos per grade level</li>
+              <li>Resources for extending and enriching student learning</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <TechDetails />
     </>
   )
 }
