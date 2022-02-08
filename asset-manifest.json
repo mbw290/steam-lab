@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/steam-lab/static/css/main.216aba71.css",
-    "main.js": "/steam-lab/static/js/main.cbccf4ab.js",
+    "main.css": "/steam-lab/static/css/main.d37c4fbf.css",
+    "main.js": "/steam-lab/static/js/main.cc2cc4ad.js",
     "static/media/kids-home2.png": "/steam-lab/static/media/kids-home2.da3e7dd67de8133b9e04.png",
     "static/media/kids-home.png": "/steam-lab/static/media/kids-home.56d5cef9897e2d922721.png",
     "static/media/Quicksand-Regular.ttf": "/steam-lab/static/media/Quicksand-Regular.109d09e5f7c827d891ab.ttf",
@@ -18,11 +18,11 @@
     "static/media/tish_reed.jpg": "/steam-lab/static/media/tish_reed.eb1a585d9cff9ec8d629.jpg",
     "static/media/kids_reading.jpg": "/steam-lab/static/media/kids_reading.de86590e4bc1a339a0e6.jpg",
     "index.html": "/steam-lab/index.html",
-    "main.216aba71.css.map": "/steam-lab/static/css/main.216aba71.css.map",
-    "main.cbccf4ab.js.map": "/steam-lab/static/js/main.cbccf4ab.js.map"
+    "main.d37c4fbf.css.map": "/steam-lab/static/css/main.d37c4fbf.css.map",
+    "main.cc2cc4ad.js.map": "/steam-lab/static/js/main.cc2cc4ad.js.map"
   },
   "entrypoints": [
-    "static/css/main.216aba71.css",
-    "static/js/main.cbccf4ab.js"
+    "static/css/main.d37c4fbf.css",
+    "static/js/main.cc2cc4ad.js"
   ]
 }
