@@ -10,5 +10,11 @@
   justify-content: flex-start;
   gap: 50px;
   padding: 5%;
-  width: 80%;
+  max-width: 1600px;
+}
+
+@media (max-width: 1264px) {
+  .members__videos-container {
+    justify-content: center;
+  }
 }

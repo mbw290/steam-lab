@@ -3,8 +3,6 @@ import './VideoCard.css'
 
 const VideoCard = (props) => {
 
-  console.log(props);
-
   const { thumbnail, description } = props
 
   return (
