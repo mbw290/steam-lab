@@ -1,0 +1,10 @@
+.samples__container {
+  display: flex;
+  justify-content: center;
+}
+
+.video-mask {
+  border-radius: 30px;
+  overflow: hidden;
+  --webkit-transform: translateZ(0);
+}

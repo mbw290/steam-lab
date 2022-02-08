@@ -42,9 +42,9 @@ const App= () => {
         <hr style={ hrStyle } />
         <NavLink onClick={ closeSideBar } to='/about'>ABOUT US</NavLink>
         <hr style={ hrStyle } />
-        <NavLink onClick={ closeSideBar } to='/offerings'>OFFERINGS</NavLink>
-        <hr style={ hrStyle } />
         <NavLink onClick={ closeSideBar } to='/samples'>SAMPLE LESSONS</NavLink>
+        <hr style={ hrStyle } />
+        <NavLink onClick={ closeSideBar } to='/members'>MEMBER ZONE</NavLink>
         <hr style={ hrStyle } />
         <NavLink onClick={ closeSideBar } to='/contact'>CONTACT US</NavLink>
       </Menu>
@@ -66,10 +66,10 @@ const App= () => {
               <NavLink to='/about' activeclassname="underline">ABOUT US</NavLink>
             </li>
             <li className='nav-button'>
-              <NavLink to='/offerings' activeclassname="underline">OFFERINGS</NavLink>
+              <NavLink to='/samples' activeclassname="underline">SAMPLE LESSONS</NavLink>
             </li>
             <li className='nav-button'>
-              <NavLink to='/samples' activeclassname="underline">SAMPLE LESSONS</NavLink>
+              <NavLink to='/members' activeclassname="underline">MEMBERS</NavLink>
             </li>
           </ul>
         </nav>

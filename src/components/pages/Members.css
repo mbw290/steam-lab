@@ -1,0 +1,14 @@
+.members__container {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.members__videos-container {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  gap: 50px;
+  padding: 5%;
+  width: 80%;
+}

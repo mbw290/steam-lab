@@ -5,7 +5,7 @@ import ScrollToTop from "./components/ScrollToTop"
 import Home from "./components/pages/Home"
 import Mission from "./components/pages/Mission"
 import About from "./components/pages/About"
-import Offerings from "./components/pages/Offerings"
+import Members from "./components/pages/Members"
 import Samples from "./components/pages/Samples"
 import Contact from "./components/pages/Contact"
 import App from "./App"
@@ -18,7 +18,7 @@ ReactDOM.render(
         <Route index element={<Home />} />
         <Route path="/mission" element={<Mission />} />
         <Route path="/about" element={<About />} />
-        <Route path="/offerings" element={<Offerings />} />
+        <Route path="/members" element={<Members />} />
         <Route path="/samples" element={<Samples />} />
         <Route path="/contact" element={<Contact />} />
       </Route>

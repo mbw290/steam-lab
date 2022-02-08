@@ -1,0 +1,18 @@
+.video-card__container {
+  display: flex;
+  flex-flow: column nowrap;
+  width: 300px;
+}
+
+.video-card__thumbnail {
+  height: 225px;
+  background-color: #0075a3;
+  border-radius: 45px 45px 0px 0px;
+}
+
+.video-card__description {
+  height: 125px;
+  background-color: #eee;
+  border-radius: 0px 0px 45px 45px;
+  padding: 8px;
+}
