@@ -18,8 +18,9 @@ const Footer = () => {
             <li><Link className='white' to='/'>Home</Link></li>
             <li><Link className='white' to='/mission'>Our Mission</Link></li>
             <li><Link className='white' to='/about'>About Us</Link></li>
-            <li><Link className='white' to='/offerings'>Offerings</Link></li>
             <li><Link className='white' to='/samples'>Sample Lessons</Link></li>
+            <li><Link className='white' to='/members'>Members</Link></li>
+            <li><Link className='white' to='/contact'>Contact Us</Link></li>
           </ul>
         </div>
         <div className='footer__legal'>
