@@ -13,7 +13,7 @@ const hrStyle = {
   height: '1px'
 }
 
-const App= () => {
+const App = () => {
   // boolean state to determine if burger menu should be open/close
   const [isOpen, setOpen] = useState(false)
 
@@ -29,7 +29,7 @@ const App= () => {
 
   return (
     <div className="App">
-      {/* Hamburger menu (only visible when screen width less than 1308px) */}
+      {/* Hamburger menu */}
       <Menu
         isOpen={isOpen}
         onOpen={handleIsOpen}
@@ -44,10 +44,12 @@ const App= () => {
         <hr style={ hrStyle } />
         <NavLink onClick={ closeSideBar } to='/samples'>SAMPLE LESSONS</NavLink>
         <hr style={ hrStyle } />
-        <NavLink onClick={ closeSideBar } to='/members'>MEMBER ZONE</NavLink>
+        <NavLink onClick={ closeSideBar } to='/members'>MEMBERS</NavLink>
         <hr style={ hrStyle } />
         <NavLink onClick={ closeSideBar } to='/contact'>CONTACT US</NavLink>
       </Menu>
+
+      {/* Main nav menu */}
       <div className='navigation'>
         <div className='logo-left'>
           <Link to='/'>

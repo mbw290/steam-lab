@@ -1,7 +1,13 @@
 .members__container {
   display: flex;
+  flex-flow: column nowrap;
   justify-content: center;
-  margin-top: 50px;
+}
+
+@media (max-width: 600px) {
+  .members__container {
+    margin-top: 60px;
+  }
 }
 
 .members__videos-container {
@@ -9,12 +15,34 @@
   flex-flow: row wrap;
   justify-content: flex-start;
   gap: 50px;
-  padding: 5%;
+  padding:  60px 10%;
   max-width: 1600px;
 }
 
 @media (max-width: 1264px) {
   .members__videos-container {
     justify-content: center;
+    padding: 5%;
+  }
+}
+
+.members__button-container {
+  display: flex;
+  justify-content: center;
+}
+
+.members__grade-buttons {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  gap: 12px;
+  list-style: none;
+  max-width: 700px;
+  padding: 0px;
+}
+
+@media (max-width: 600px) {
+  .members__grade-buttons {
+    max-width: 90%;
   }
 }
