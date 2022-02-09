@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/steam-lab/static/css/main.2c984b3a.css",
-    "main.js": "/steam-lab/static/js/main.ccecb5be.js",
+    "main.js": "/steam-lab/static/js/main.03971d6c.js",
     "static/media/kinder_ping-pong.png": "/steam-lab/static/media/kinder_ping-pong.86662fd223737418b9e2.png",
     "static/media/kinder_gingerbread-man.png": "/steam-lab/static/media/kinder_gingerbread-man.e8908005e895ff7e7300.png",
     "static/media/kinder_water-cycle.png": "/steam-lab/static/media/kinder_water-cycle.fba641a8f3d622f62dc0.png",
@@ -25,10 +25,10 @@
     "static/media/kids_reading.jpg": "/steam-lab/static/media/kids_reading.de86590e4bc1a339a0e6.jpg",
     "index.html": "/steam-lab/index.html",
     "main.2c984b3a.css.map": "/steam-lab/static/css/main.2c984b3a.css.map",
-    "main.ccecb5be.js.map": "/steam-lab/static/js/main.ccecb5be.js.map"
+    "main.03971d6c.js.map": "/steam-lab/static/js/main.03971d6c.js.map"
   },
   "entrypoints": [
     "static/css/main.2c984b3a.css",
-    "static/js/main.ccecb5be.js"
+    "static/js/main.03971d6c.js"
   ]
 }
