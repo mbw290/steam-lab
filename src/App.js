@@ -31,9 +31,9 @@ const App = () => {
     <div className="App">
       {/* Hamburger menu */}
       <Menu
-        isOpen={isOpen}
-        onOpen={handleIsOpen}
-        onClose={handleIsOpen}
+        isOpen={ isOpen }
+        onOpen={ handleIsOpen }
+        onClose={ handleIsOpen }
         right
       >
         <NavLink onClick={ closeSideBar } to='/'>HOME</NavLink>
@@ -53,7 +53,7 @@ const App = () => {
       <div className='navigation'>
         <div className='logo-left'>
           <Link to='/'>
-            <img src={Logo} alt='Logo' />
+            <img src={ Logo } alt='Logo' />
           </Link>
         </div>
         <nav className='nav-list'>

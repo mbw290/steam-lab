@@ -12,23 +12,41 @@
 
 .members__videos-container {
   display: flex;
-  flex-flow: row wrap;
-  justify-content: flex-start;
+  justify-content: center;
   gap: 50px;
-  padding:  60px 10%;
-  max-width: 1600px;
+  padding: 60px;
 }
 
-@media (max-width: 1264px) {
-  .members__videos-container {
-    justify-content: center;
-    padding: 5%;
-  }
+.members__videos-content-container {
+  max-width: 1130px;
+}
+
+.members__videos {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  gap: 50px;
+  max-width: 1130px;
+}
+
+.members__heading {
+  display: flex;
+  justify-content: center;
+  text-decoration-line: underline;
+  text-decoration-style: wavy;
+  text-underline-offset: 20px;
+  font-size: 2.5em;
+  font-weight: bold;
+  margin-bottom: 80px;
 }
 
 .members__button-container {
   display: flex;
   justify-content: center;
+}
+
+.members__button {
+  
 }
 
 .members__grade-buttons {
