@@ -5,13 +5,23 @@
   cursor: pointer;
 }
 
+.video-card__container .video-card__description {
+  transition: all .2s ease-in;
+}
+
+.video-card__container:hover .video-card__description {
+  background-color: #0086bb;
+  transition: all .2s ease-out;
+}
+
 .video-card__thumbnail {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 225px;
-  background-color: white;
+  background-color: #eee;
   border-radius: 45px 45px 0px 0px;
+  transition: all .2s ease-out;
 }
 
 .video-card__thumbnail img {
@@ -21,13 +31,21 @@
   border-radius: 45px 45px 0px 0px;
 }
 
+.video-card__thumbnail:hover {
+  opacity: 0.88;
+  transition: all .2s ease-out;
+}
+
 .video-card__description {
   display: block;
-  height: 141px;
+  height: 120px;
   background-color: #0075a3;
   border-radius: 0px 0px 45px 45px;
-  padding: 12px;
+  padding: 20px;
   color: white;
+  border-top-style: solid;
+  border-color: white;
+  border-width: 1px;
 }
 
 .video-card__description h3 {
