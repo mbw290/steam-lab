@@ -45,41 +45,55 @@ const Members = () => {
       {/* grades nav menu */}
       <ul className='members__grade-buttons'>
         <li>
-          <button>All Videos</button>
+          <button className='members__button'>All Videos</button>
         </li>
         <li>
-          <button onClick={ () => {
+          <button
+            className='members__button'
+            onClick={ () => {
             handleGradeButtonClick(kinder_videos, 'Kindergarten')
           }}>Kindergarten</button>
         </li>
         <li>
-          <button onClick={ () => {
-            handleGradeButtonClick(first_videos, 'Grade 1')
+          <button
+            className='members__button'
+            onClick={ () => {
+              handleGradeButtonClick(first_videos, 'Grade 1')
           }}>Grade 1</button>
         </li>
         <li>
-          <button onClick={ () => {
-            handleGradeButtonClick(second_videos, 'Grade 2')
+          <button
+            className='members__button'
+            onClick={ () => {
+              handleGradeButtonClick(second_videos, 'Grade 2')
           }}>Grade 2</button>
         </li>
         <li>
-          <button onClick={ () => {
-            handleGradeButtonClick(third_videos, 'Grade 3')
+          <button
+            className='members__button'
+            onClick={ () => {
+              handleGradeButtonClick(third_videos, 'Grade 3')
           }}>Grade 3</button>
         </li>
         <li>
-          <button onClick={ () => {
-            handleGradeButtonClick(fourth_videos, 'Grade 4')
+          <button
+            className='members__button'
+            onClick={ () => {
+              handleGradeButtonClick(fourth_videos, 'Grade 4')
           }}>Grade 4</button>
         </li>
         <li>
-          <button onClick={ () => {
-            handleGradeButtonClick(fifth_videos, 'Grade 5')
+          <button
+            className='members__button'
+            onClick={ () => {
+              handleGradeButtonClick(fifth_videos, 'Grade 5')
           }}>Grade 5</button>
         </li>
         <li>
-          <button onClick={ () => {
-            handleGradeButtonClick(sixth_videos, 'Grade 6')
+          <button
+            className='members__button'
+            onClick={ () => {
+              handleGradeButtonClick(sixth_videos, 'Grade 6')
           }}>Grade 6</button>
         </li>
       </ul>
