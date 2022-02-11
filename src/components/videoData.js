@@ -299,7 +299,7 @@ const sixth_videos = [
   {
     id: "sixth-2",
     thumbnail: Parachutes,
-    title: "Air Resistance and Parachutes",
+    title: "Parachutes",
     description: 'How do parachutes help people land safely after jumping out of a plane?'
   },
   {
